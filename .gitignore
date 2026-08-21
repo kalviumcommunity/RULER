@@ -1,0 +1,11 @@
+# Environment file containing sensitive credentials
+.env
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Execution logs
+*.log
