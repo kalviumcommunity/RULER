@@ -1,0 +1,64 @@
+2026-08-21 15:01:39 [INFO] --------------------------------------------------
+2026-08-21 15:01:39 [INFO] [CONFIG] Initializing Client Configuration from Environment
+2026-08-21 15:01:39 [INFO]    * Base URL: http://localhost:8000/v1
+2026-08-21 15:01:39 [INFO]    * Model:    gpt-4o-mini
+2026-08-21 15:01:39 [INFO]    * API Key:  sk-t*********2345
+2026-08-21 15:01:39 [INFO] --------------------------------------------------
+2026-08-21 15:01:39 [INFO] [OUTGOING REQUEST PAYLOAD]
+{
+  "model": "gpt-4o-mini",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant for banking regulations and compliance."
+    },
+    {
+      "role": "user",
+      "content": "What is the primary purpose of a banking regulatory compliance policy?"
+    }
+  ]
+}
+2026-08-21 15:01:43 [INFO] HTTP Request: POST http://localhost:8000/v1/chat/completions "HTTP/1.0 200 OK"
+2026-08-21 15:01:43 [INFO] [INCOMING RESPONSE PAYLOAD]
+{
+  "id": "chatcmpl-mock-998877",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "A banking regulatory compliance policy defines rules and operational standards to ensure financial institutions strictly adhere to legal mandates, maintain risk controls, and safeguard customer data and assets.",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "created": 1771666600,
+  "model": "gpt-4o-mini",
+  "object": "chat.completion",
+  "moderation": null,
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "completion_tokens": 34,
+    "prompt_tokens": 28,
+    "total_tokens": 62,
+    "completion_tokens_details": null,
+    "prompt_tokens_details": null
+  }
+}
+2026-08-21 15:01:43 [INFO] [TOKEN USAGE]
+2026-08-21 15:01:43 [INFO]    * Prompt Tokens:     28
+2026-08-21 15:01:43 [INFO]    * Completion Tokens: 34
+2026-08-21 15:01:43 [INFO]    * Total Tokens:      62
+
+==================================================
+[MODEL TEXT REPLY]
+A banking regulatory compliance policy defines rules and operational standards to ensure financial institutions strictly adhere to legal mandates, maintain risk controls, and safeguard customer data and assets.
+==================================================
+
